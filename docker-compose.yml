@@ -1,0 +1,43 @@
+# version: '3.8'
+# services: - Defines containers to run
+services:
+# postgres: - PostgreSQL database service
+# Creates student_db database automatically
+# Maps host port 5440 → container 5432
+  postgres:
+    image: postgres:latest
+    container_name: student-db
+    environment:
+      POSTGRES_PASSWORD: 316618
+      POSTGRES_DB: student_db
+    ports:
+      - "5440:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql
+
+# adminer: - Database GUI
+# Connects to postgres service automatically (same network)
+# Access at http://localhost:8080
+  adminer:
+    image: adminer:latest
+    container_name: adminer
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+  
+  rabbitmq:
+    image: rabbitmq:3-management
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: student
+      RABBITMQ_DEFAULT_PASS: student123
+
+# volumes: - Persistent storage for PostgreSQL data
+# postgres_data: saves database data permanently
+# Even if container deleted, data remains
+volumes:
+  postgres_data:
