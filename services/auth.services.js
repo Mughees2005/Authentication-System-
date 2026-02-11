@@ -56,9 +56,7 @@ async function loginUser(email, password) {
         JWT_SECRET,
         {expiresIn: '24h'}
     )
-
     return {user: {id: user.id, name: user.name, email: user.email}, token};
-
 }
 module.exports = {registerUser, loginUser};
 // module.exports = {loginUser};

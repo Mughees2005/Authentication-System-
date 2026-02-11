@@ -15,15 +15,23 @@ async function register(req, reply) {
     }
 }
 
+// async function login(req, reply) {
+//     try{
+//         const {email, password} = req.body;
+//         const user = await loginUser(email, password)
+//         reply.send({message: 'login done', user: user, token: token})
+//     } catch(error){
+//         reply.code(500).send({error: error.message});
+//     } 
+// }
 async function login(req, reply) {
     try{
         const {email, password} = req.body;
-        const user = await loginUser(email, password)
+        const {user, token} = await loginUser(email, password)
         reply.send({message: 'login done', user: user, token: token})
     } catch(error){
         reply.code(500).send({error: error.message});
     } 
 }
-
 
 module.exports = {register, login};
