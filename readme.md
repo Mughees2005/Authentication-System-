@@ -248,8 +248,25 @@ _Add screenshots to `/docs` or project root and update links below._
 
 ## Author ✍️
 
-- Maintainer: StudentConnect contributors
-- Repo: use this project as a demo in interviews — highlights Fastify + Sequelize + RabbitMQ + Docker.
+**Mughees Saleem**  
+📍 *Karachi, Pakistan*  
+
+Data Analyst | Data Scientist Enthusiast  
+
+<div align="center">
+  <a href="mailto:mughees_saleem@outlook.com" target="_blank">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+  </a>
+  <a href="https://www.linkedin.com/in/mughees-saleem-/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="https://github.com/Mughees2005" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-333?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+  <a href="https://www.kaggle.com/mugheessaleem" target="_blank">
+    <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle"/>
+  </a>
+</div>
 
 ---
 
