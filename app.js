@@ -2,6 +2,8 @@ const fastify = require('fastify')()
 const sequelize = require('./config/db');
 const Student = require('./models/student');
 const {initRabbitMQ} = require('./services/queue_services/rabbitmq_connection');
+const path = require('path');
+const fastifyStatic = require('@fastify/static');
 // const Student = require('./models/student')
 
 fastify.register(require('@fastify/formbody'))
@@ -34,13 +36,11 @@ async function setupDatabase() {
 setupDatabase();
 
 
-const path = require('path');
-const fastifyStatic = require('@fastify/static');
-
 // Serve static files from "public" folder
 fastify.register(fastifyStatic, {
   root: path.join(__dirname, 'public'),
 });
+
 
 // get all users
 fastify.get('/users', async (req, reply) =>{
