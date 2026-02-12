@@ -60,6 +60,9 @@ using modern Node.js tools and industry best practices.
 ├─ docker-compose.yml
 ├─ package.json
 ├─ readme.md
+├─ screenshots/         
+│  ├─ docker-containers.png
+│  └─ postman-login.png
 ├─ config/
 │  └─ db.js
 ├─ consumers/
@@ -107,7 +110,7 @@ Notes:
 - RabbitMQ management UI: http://localhost:15672
 
 ### Without Docker (local services)
-1. Start a PostgreSQL instance and create the database (see env vars below).
+1. Start a PostgreSQL instance and create the database.
 2. Start RabbitMQ (with management plugin) locally.
 3. Export environment variables (Windows PowerShell example):
 ```powershell
