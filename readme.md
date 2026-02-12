@@ -239,7 +239,7 @@ Access:
 ## 📸 Project Demo
 
 |-------------------|-------------------|
-| ![Docker](screenshots/docker-containers.png) | ![Postman](screenshots/postman-login.png) |
+| ![Docker](./screenshots/docker-containers.png.png)| ![Postman](./screenshots/postman-login.png.png) |
 ---
 
 ## Challenges Faced & Learnings 🧩
