@@ -11,6 +11,22 @@ A compact Fastify backend implementing JWT-based authentication, PostgreSQL pers
 
 ---
 
+## 💡 Why This Project?
+
+I built this project to **master the fundamentals of backend development** — 
+authentication, database design, and asynchronous communication.
+
+Key learning goals:
+- Implement **JWT authentication** with proper password hashing
+- Design a **clean MVC architecture** with separation of concerns
+- Integrate **RabbitMQ** for message-driven workflows
+- **Containerize** services with Docker for consistent development
+
+This project demonstrates my ability to build **production-ready APIs** 
+using modern Node.js tools and industry best practices.
+
+---
+
 ## Features ✨
 - ✅ User registration & login with bcrypt password hashing
 - ✅ JWT authentication with configurable expiration
@@ -217,14 +233,10 @@ Access:
 
 ---
 
-## Screenshots 📸
-_Add screenshots to `/docs` or project root and update links below._
+## 📸 Project Demo
 
-- Login page: `public/login.html`
-- Register page: `public/register.html`
-- RabbitMQ management UI: http://localhost:15672
-- Adminer DB UI: http://localhost:8080
-
+|-------------------|-------------------|
+| ![Docker](screenshots/docker-containers.png) | ![Postman](screenshots/postman-login.png) |
 ---
 
 ## Challenges Faced & Learnings 🧩
@@ -236,22 +248,12 @@ _Add screenshots to `/docs` or project root and update links below._
 
 ---
 
-## Future Scope 🚀
-
-- Extract configuration into environment-driven config with validation.
-- Add integration and unit tests (Jest / Supertest) for auth flows and queue publishing.
-- Implement a real email worker using SMTP or transactional email API.
-- Harden production readiness (healthchecks, logging, monitoring, container user and secrets).
-- Build a small SPA frontend (React/Vue) to replace the static `public/` pages.
-
----
-
 ## Author ✍️
 
 **Mughees Saleem**  
 📍 *Karachi, Pakistan*  
 
-Data Analyst | Data Scientist Enthusiast  
+Backend Developer | Data Scientist Enthusiast  
 
 <div align="center">
   <a href="mailto:mughees_saleem@outlook.com" target="_blank">
@@ -263,14 +265,4 @@ Data Analyst | Data Scientist Enthusiast
   <a href="https://github.com/Mughees2005" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-333?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
   </a>
-  <a href="https://www.kaggle.com/mugheessaleem" target="_blank">
-    <img src="https://img.shields.io/badge/Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" alt="Kaggle"/>
-  </a>
 </div>
-
----
-
-If you'd like, I can also:
-- convert `config/db.js` to use environment variables,
-- add a `.env.example`, or
-- commit this change to a branch.
