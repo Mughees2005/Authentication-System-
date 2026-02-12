@@ -237,10 +237,20 @@ Access:
 ---
 
 ## 📸 Project Demo
+<div align="center">
 
-|-------------------|-------------------|
+### Docker Containers
+<img src="./screenshots/docker-containers.png.png" alt="Docker Containers" width="600"/>
+
+### Login API Response
+<img src="./screenshots/postman-login.png.png" alt="Postman Login" width="600"/>
+
+*PostgreSQL, Adminer, and RabbitMQ running in Docker containers*
+
+</div>
+<!-- |-------------------|-------------------|
 | ![Docker](./screenshots/docker-containers.png.png)| ![Postman](./screenshots/postman-login.png.png) |
----
+--- -->
 
 ## Challenges Faced & Learnings 🧩
 
